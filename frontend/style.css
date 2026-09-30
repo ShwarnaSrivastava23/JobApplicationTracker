@@ -1,0 +1,405 @@
+/* =========================
+   JOBTRACK - MAIN STYLE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #111827;
+}
+
+h2 {
+    color: #111827;
+}
+
+h3 {
+    color: #374151;
+}
+
+/* =========================
+   ADD APPLICATION FORM
+   ========================= */
+
+form {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #374151;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button,
+.add-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+}
+
+button:hover,
+.add-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.view-btn {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 11px 18px;
+    background: #374151;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.view-btn:hover {
+    background: #1f2937;
+}
+
+/* =========================
+   INFO BOX
+   ========================= */
+
+.info {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 18px 0;
+    color: #1e40af;
+}
+
+/* =========================
+   APPLICATION PAGE HEADER
+   ========================= */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.add-btn {
+    background: #2563eb;
+    color: white;
+}
+
+/* =========================
+   FILTER / SEARCH BOX
+   ========================= */
+
+.filter-box {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.filter-box input {
+    width: 55%;
+}
+
+.filter-box select {
+    width: 180px;
+    margin-left: 8px;
+}
+
+.filter-box button {
+    margin-left: 8px;
+}
+
+/* =========================
+   DASHBOARD
+   ========================= */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.dashboard-card .title {
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+/* =========================
+   APPLICATION CARD
+   ========================= */
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.09);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   APPLICATION DETAILS
+   ========================= */
+
+.field {
+    margin: 9px 0;
+    color: #4b5563;
+}
+
+.label {
+    font-weight: bold;
+    color: #374151;
+}
+
+/* =========================
+   STATUS
+   ========================= */
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e0e7ff;
+    color: #3730a3;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* =========================
+   ACTION BUTTONS
+   ========================= */
+
+.buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.buttons a,
+.buttons button {
+    display: inline-block;
+    padding: 9px 13px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.history {
+    background: #6b7280;
+}
+
+.history:hover {
+    background: #4b5563;
+}
+
+.edit {
+    background: #2563eb;
+}
+
+.edit:hover {
+    background: #1d4ed8;
+}
+
+.delete {
+    background: #dc2626;
+}
+
+.delete:hover {
+    background: #b91c1c;
+}
+
+/* =========================
+   JOB LINK
+   ========================= */
+
+.job-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.job-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   EMPTY STATE
+   ========================= */
+
+.empty {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 14px;
+    color: #6b7280;
+}
+
+/* =========================
+   HISTORY
+   ========================= */
+
+.history-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #374151;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-box input,
+    .filter-box select {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .filter-box button {
+        margin: 6px 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons a,
+    .buttons button {
+        text-align: center;
+    }
+}
