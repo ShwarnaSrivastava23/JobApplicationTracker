@@ -1,71 +1,131 @@
 # 💼 JobTrack — Job Application Management System
 
-A simple web-based application that helps users manage and track their job applications in one place.
+<p align="center">
+  <b>Track. Manage. Organize. Your Job Search.</b>
+</p>
+
+<p align="center">
+  A web-based job application management system that helps users organize,
+  track, and manage their job applications in one place.
+</p>
+
+<p align="center">
+  <a href="https://jobapplicationtracker-a9zof8pzj5yy4vzj5depcq.streamlit.app/">
+    🚀 <b>LIVE DEMO</b>
+  </a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://github.com/ShwarnaSrivastava23/JobApplicationTracker">
+    💻 <b>GITHUB</b>
+  </a>
+</p>
 
 ---
 
-## ✨ Features
+## 🚀 Live Demo
 
-- 🔐 User Signup and Login
-- ➕ Add job applications
-- ✏️ Update application details
-- 🗑️ Delete applications
-- 🔎 Search applications
-- 📊 Track application status
-- 🕒 View application history
-- 💾 Store application data using SQLite
-- 📱 Simple and responsive user interface
+### 🌐 Try JobTrack Online
+
+👉 **https://jobapplicationtracker-a9zof8pzj5yy4vzj5depcq.streamlit.app/**
+
+The application is deployed using **Streamlit Community Cloud** and can be accessed directly through a web browser.
+
+No local installation is required to try the live demo.
 
 ---
 
-## 🛠️ Technologies Used
+## 📌 About the Project
 
-| Technology | Purpose |
-|------------|---------|
-| ☕ Java | Backend development |
-| 🌐 HTML | Web page structure |
-| 🎨 CSS | User interface styling |
-| ⚡ JavaScript | Frontend functionality |
-| 🗄️ SQLite | Database |
-| 🔗 JDBC | Java-Database connection |
+**JobTrack** is a web-based Job Application Management System developed to help users keep all their job application details organized in one place.
+
+Instead of maintaining job applications manually in spreadsheets or notes, users can add applications, track their current status, search and filter applications, update information, and view the history of status changes.
+
+The project provides a simple interface for managing the complete job application tracking process.
 
 ---
 
-## 📂 Project Structure
+# ✨ Key Features
+
+## 🔐 User Authentication
+
+- User registration
+- User login and logout
+- Password hashing using SHA-256
+- User-specific application data
+
+---
+
+## 📝 Add Job Applications
+
+Users can add job applications with important details such as:
+
+- Company Name
+- Job Role
+- Job ID / Registration ID
+- Application Status
+- Location
+- Job Link
+- Notes
+
+Each application is automatically assigned a unique **JobTrack ID**.
+
+Example:
 
 ```text
+JT-0001
+JT-0002
+JT-0003
+
+🏗️ Project Structure
+
+
 JobApplicationTracker/
 │
-├── frontend/
-│   └── style.css
+├── streamlit_app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
 │
-├── lib/
-│   └── sqlite-jdbc-3.53.4.0.jar
+├── jobtrack.db
 │
 ├── Database.java
 ├── JobTrackServer.java
 ├── index.html
-└── jobtrack.db
+│
+├── frontend/
+│   └── style.css
+│
+└── lib/
+    └── sqlite-jdbc-3.53.4.0.jar
 
-Working
+🔄 Application Workflow
 
-
-                👤 User
-                   │
-                   ▼
-            🔐 Login / Signup
-                   │
-                   ▼
-          📊 JobTrack Dashboard
-                   │
-                   ▼
-          ➕ Add Job Application
-                   │
-                   ▼
-            🗄️ SQLite Database
-                   │
-                   ▼
-       🔎 Search & Manage Applications
-                   │
-                   ▼
-          🕒 Application History
+                   ┌─────────────────┐
+                   │      User       │
+                   └────────┬────────┘
+                            │
+                            ▼
+                   ┌─────────────────┐
+                   │  Signup / Login │
+                   └────────┬────────┘
+                            │
+                            ▼
+                   ┌─────────────────┐
+                   │    Dashboard    │
+                   └────────┬────────┘
+                            │
+             ┌──────────────┼──────────────┐
+             │              │              │
+             ▼              ▼              ▼
+        Add Job        View Jobs      Search / Filter
+             │              │              │
+             └──────────────┼──────────────┘
+                            │
+                            ▼
+                   ┌─────────────────┐
+                   │ SQLite Database │
+                   └────────┬────────┘
+                            │
+             ┌──────────────┼──────────────┐
+             │              │              │
+             ▼              ▼              ▼
+           Edit          Delete         History
