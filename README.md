@@ -68,6 +68,81 @@ Users can add job applications with important details such as:
 
 Each application is automatically assigned a unique **JobTrack ID**.
 
+# 🛠️ Tech Stack
+
+<div align="center">
+
+### 🎨 Frontend
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+
+### ⚙️ Backend
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+
+### 🗄️ Database
+
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/>
+
+### 🔧 Tools & Deployment
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+
+</div>
+
+---
+
+## 🧩 Technology Overview
+
+| Technology | Used For |
+|---|---|
+| 🐍 **Python** | Main application development |
+| 🎈 **Streamlit** | Web interface and application deployment |
+| 🗄️ **SQLite** | Storing users, applications, and history |
+| ☕ **Java** | Original backend implementation |
+| 🌐 **HTML/CSS/JavaScript** | Original web interface |
+| 🔐 **SHA-256** | Password hashing |
+| 🔧 **Git** | Version control |
+| 🐙 **GitHub** | Source code hosting |
+| ☁️ **Streamlit Community Cloud** | Live deployment |
+
+---
+
+## 🏗️ Architecture
+
+```text
+                    👤 USER
+                      │
+                      ▼
+              ┌───────────────┐
+              │   Streamlit   │
+              │  Web Interface│
+              └───────┬───────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │    Python     │
+              │ Application   │
+              │    Logic      │
+              └───────┬───────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │    SQLite     │
+              │   Database    │
+              └───────────────┘
+                      │
+          ┌───────────┼───────────┐
+          ▼           ▼           ▼
+       Users     Applications   History
+
+
 Example:
 
 ```text
